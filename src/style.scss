@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 @font-face {
-  font-family: 'spring-pms';
+  font-family: $icon-font-family;
   src:
     url('fonts/spring-pms.ttf?4jfbtf') format('truetype'),
     url('fonts/spring-pms.woff?4jfbtf') format('woff'),
