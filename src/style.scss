@@ -1,7 +1,7 @@
-@use "variables" as *;
+@use "variables" as springpmsfont;
 
 @font-face {
-  font-family: $icon-font-family;
+  font-family: springpmsfont.$icon-font-family;
   src:
     url('fonts/spring-pms.ttf?4jfbtf') format('truetype'),
     url('fonts/spring-pms.woff?4jfbtf') format('woff'),
@@ -28,562 +28,562 @@
 
 .icon-no_return {
   &:before {
-    content: $icon-no_return;
+    content: springpmsfont.$icon-no_return;
   }
 }
 .icon-redo {
   &:before {
-    content: $icon-redo;
+    content: springpmsfont.$icon-redo;
   }
 }
 .icon-undo {
   &:before {
-    content: $icon-undo;
+    content: springpmsfont.$icon-undo;
   }
 }
 .icon-book {
   &:before {
-    content: $icon-book;
+    content: springpmsfont.$icon-book;
   }
 }
 .icon-portfolio {
   &:before {
-    content: $icon-portfolio;
+    content: springpmsfont.$icon-portfolio;
   }
 }
 .icon-ruble {
   &:before {
-    content: $icon-ruble;
+    content: springpmsfont.$icon-ruble;
   }
 }
 .icon-site {
   &:before {
-    content: $icon-site;
+    content: springpmsfont.$icon-site;
   }
 }
 .icon-cloud-structure {
   &:before {
-    content: $icon-cloud-structure;
+    content: springpmsfont.$icon-cloud-structure;
   }
 }
 .icon-conversation {
   &:before {
-    content: $icon-conversation;
+    content: springpmsfont.$icon-conversation;
   }
 }
 .icon-design {
   &:before {
-    content: $icon-design;
+    content: springpmsfont.$icon-design;
   }
 }
 .icon-globe {
   &:before {
-    content: $icon-globe;
+    content: springpmsfont.$icon-globe;
   }
 }
 .icon-massage {
   &:before {
-    content: $icon-massage;
+    content: springpmsfont.$icon-massage;
   }
 }
 .icon-kebab-menu {
   &:before {
-    content: $icon-kebab-menu;
+    content: springpmsfont.$icon-kebab-menu;
   }
 }
 .icon-meatball-menu {
   &:before {
-    content: $icon-meatball-menu;
+    content: springpmsfont.$icon-meatball-menu;
   }
 }
 .icon-personal {
   &:before {
-    content: $icon-personal;
+    content: springpmsfont.$icon-personal;
   }
 }
 .icon-inspector {
   &:before {
-    content: $icon-inspector;
+    content: springpmsfont.$icon-inspector;
   }
 }
 .icon-arrow_left_dotted {
   &:before {
-    content: $icon-arrow_left_dotted;
+    content: springpmsfont.$icon-arrow_left_dotted;
   }
 }
 .icon-arrow_right_dotted {
   &:before {
-    content: $icon-arrow_right_dotted;
+    content: springpmsfont.$icon-arrow_right_dotted;
   }
 }
 .icon-boat {
   &:before {
-    content: $icon-boat;
+    content: springpmsfont.$icon-boat;
   }
 }
 .icon-booking {
   &:before {
-    content: $icon-booking;
+    content: springpmsfont.$icon-booking;
   }
 }
 .icon-cart_2 {
   &:before {
-    content: $icon-cart_2;
+    content: springpmsfont.$icon-cart_2;
   }
 }
 .icon-domestic {
   &:before {
-    content: $icon-domestic;
+    content: springpmsfont.$icon-domestic;
   }
 }
 .icon-feedback {
   &:before {
-    content: $icon-feedback;
+    content: springpmsfont.$icon-feedback;
   }
 }
 .icon-fixprice {
   &:before {
-    content: $icon-fixprice;
+    content: springpmsfont.$icon-fixprice;
   }
 }
 .icon-horeca {
   &:before {
-    content: $icon-horeca;
+    content: springpmsfont.$icon-horeca;
   }
 }
 .icon-plot {
   &:before {
-    content: $icon-plot;
+    content: springpmsfont.$icon-plot;
   }
 }
 .icon-QR-logo {
   &:before {
-    content: $icon-QR-logo;
+    content: springpmsfont.$icon-QR-logo;
   }
 }
 .icon-scalability {
   &:before {
-    content: $icon-scalability;
+    content: springpmsfont.$icon-scalability;
   }
 }
 .icon-skype {
   &:before {
-    content: $icon-skype;
+    content: springpmsfont.$icon-skype;
   }
 }
 .icon-www {
   &:before {
-    content: $icon-www;
+    content: springpmsfont.$icon-www;
   }
 }
 .icon-attention {
   &:before {
-    content: $icon-attention;
+    content: springpmsfont.$icon-attention;
   }
 }
 .icon-info {
   &:before {
-    content: $icon-info;
+    content: springpmsfont.$icon-info;
   }
 }
 .icon-question {
   &:before {
-    content: $icon-question;
+    content: springpmsfont.$icon-question;
   }
 }
 .icon-receipt {
   &:before {
-    content: $icon-receipt;
+    content: springpmsfont.$icon-receipt;
   }
 }
 .icon-spring_screen {
   &:before {
-    content: $icon-spring_screen;
+    content: springpmsfont.$icon-spring_screen;
   }
 }
 .icon-double_bed_split {
   &:before {
-    content: $icon-double_bed_split;
+    content: springpmsfont.$icon-double_bed_split;
   }
 }
 .icon-couch {
   &:before {
-    content: $icon-couch;
+    content: springpmsfont.$icon-couch;
   }
 }
 .icon-double_bed {
   &:before {
-    content: $icon-double_bed;
+    content: springpmsfont.$icon-double_bed;
   }
 }
 .icon-single_bed {
   &:before {
-    content: $icon-single_bed;
+    content: springpmsfont.$icon-single_bed;
   }
 }
 .icon-single_bed1 {
   &:before {
-    content: $icon-single_bed1;
+    content: springpmsfont.$icon-single_bed1;
   }
 }
 .icon-address {
   &:before {
-    content: $icon-address;
+    content: springpmsfont.$icon-address;
   }
 }
 .icon-alert {
   &:before {
-    content: $icon-alert;
+    content: springpmsfont.$icon-alert;
   }
 }
 .icon-area {
   &:before {
-    content: $icon-area;
+    content: springpmsfont.$icon-area;
   }
 }
 .icon-bonus {
   &:before {
-    content: $icon-bonus;
+    content: springpmsfont.$icon-bonus;
   }
 }
 .icon-breakfast {
   &:before {
-    content: $icon-breakfast;
+    content: springpmsfont.$icon-breakfast;
   }
 }
 .icon-bunk_bed {
   &:before {
-    content: $icon-bunk_bed;
+    content: springpmsfont.$icon-bunk_bed;
   }
 }
 .icon-certificate {
   &:before {
-    content: $icon-certificate;
+    content: springpmsfont.$icon-certificate;
   }
 }
 .icon-cottages {
   &:before {
-    content: $icon-cottages;
+    content: springpmsfont.$icon-cottages;
   }
 }
 .icon-done {
   &:before {
-    content: $icon-done;
+    content: springpmsfont.$icon-done;
   }
 }
 .icon-favourite {
   &:before {
-    content: $icon-favourite;
+    content: springpmsfont.$icon-favourite;
   }
 }
 .icon-hotel {
   &:before {
-    content: $icon-hotel;
+    content: springpmsfont.$icon-hotel;
   }
 }
 .icon-my_iloranta {
   &:before {
-    content: $icon-my_iloranta;
+    content: springpmsfont.$icon-my_iloranta;
   }
 }
 .icon-notification {
   &:before {
-    content: $icon-notification;
+    content: springpmsfont.$icon-notification;
   }
 }
 .icon-passport {
   &:before {
-    content: $icon-passport;
+    content: springpmsfont.$icon-passport;
   }
 }
 .icon-personal_data {
   &:before {
-    content: $icon-personal_data;
+    content: springpmsfont.$icon-personal_data;
   }
 }
 .icon-profile {
   &:before {
-    content: $icon-profile;
+    content: springpmsfont.$icon-profile;
   }
 }
 .icon-quit {
   &:before {
-    content: $icon-quit;
+    content: springpmsfont.$icon-quit;
   }
 }
 .icon-star {
   &:before {
-    content: $icon-star;
+    content: springpmsfont.$icon-star;
   }
 }
 .icon-flag {
   &:before {
-    content: $icon-flag;
+    content: springpmsfont.$icon-flag;
   }
 }
 .icon-extra {
   &:before {
-    content: $icon-extra;
+    content: springpmsfont.$icon-extra;
   }
 }
 .icon-group {
   &:before {
-    content: $icon-group;
+    content: springpmsfont.$icon-group;
   }
 }
 .icon-sauna {
   &:before {
-    content: $icon-sauna;
+    content: springpmsfont.$icon-sauna;
   }
 }
 .icon-bill {
   &:before {
-    content: $icon-bill;
+    content: springpmsfont.$icon-bill;
   }
 }
 .icon-delete {
   &:before {
-    content: $icon-delete;
+    content: springpmsfont.$icon-delete;
   }
 }
 .icon-edit {
   &:before {
-    content: $icon-edit;
+    content: springpmsfont.$icon-edit;
   }
 }
 .icon-farm {
   &:before {
-    content: $icon-farm;
+    content: springpmsfont.$icon-farm;
   }
 }
 .icon-farm-products {
   &:before {
-    content: $icon-farm-products;
+    content: springpmsfont.$icon-farm-products;
   }
 }
 .icon-history {
   &:before {
-    content: $icon-history;
+    content: springpmsfont.$icon-history;
   }
 }
 .icon-meal {
   &:before {
-    content: $icon-meal;
+    content: springpmsfont.$icon-meal;
   }
 }
 .icon-packet {
   &:before {
-    content: $icon-packet;
+    content: springpmsfont.$icon-packet;
   }
 }
 .icon-QR {
   &:before {
-    content: $icon-QR;
+    content: springpmsfont.$icon-QR;
   }
 }
 .icon-ready-meals {
   &:before {
-    content: $icon-ready-meals;
+    content: springpmsfont.$icon-ready-meals;
   }
 }
 .icon-services {
   &:before {
-    content: $icon-services;
+    content: springpmsfont.$icon-services;
   }
 }
 .icon-settings {
   &:before {
-    content: $icon-settings;
+    content: springpmsfont.$icon-settings;
   }
 }
 .icon-transfer {
   &:before {
-    content: $icon-transfer;
+    content: springpmsfont.$icon-transfer;
   }
 }
 .icon-telegram {
   &:before {
-    content: $icon-telegram;
+    content: springpmsfont.$icon-telegram;
   }
 }
 .icon-logo {
   &:before {
-    content: $icon-logo;
+    content: springpmsfont.$icon-logo;
   }
 }
 .icon-whatsapp {
   &:before {
-    content: $icon-whatsapp;
+    content: springpmsfont.$icon-whatsapp;
   }
 }
 .icon-animals {
   &:before {
-    content: $icon-animals;
+    content: springpmsfont.$icon-animals;
   }
 }
 .icon-arrow_down {
   &:before {
-    content: $icon-arrow_down;
+    content: springpmsfont.$icon-arrow_down;
   }
 }
 .icon-arrow_down_short {
   &:before {
-    content: $icon-arrow_down_short;
+    content: springpmsfont.$icon-arrow_down_short;
   }
 }
 .icon-arrow_left {
   &:before {
-    content: $icon-arrow_left;
+    content: springpmsfont.$icon-arrow_left;
   }
 }
 .icon-arrow_left_short {
   &:before {
-    content: $icon-arrow_left_short;
+    content: springpmsfont.$icon-arrow_left_short;
   }
 }
 .icon-arrow_right {
   &:before {
-    content: $icon-arrow_right;
+    content: springpmsfont.$icon-arrow_right;
   }
 }
 .icon-arrow_right_short {
   &:before {
-    content: $icon-arrow_right_short;
+    content: springpmsfont.$icon-arrow_right_short;
   }
 }
 .icon-arrow_up {
   &:before {
-    content: $icon-arrow_up;
+    content: springpmsfont.$icon-arrow_up;
   }
 }
 .icon-arrow_up_short {
   &:before {
-    content: $icon-arrow_up_short;
+    content: springpmsfont.$icon-arrow_up_short;
   }
 }
 .icon-bedroom {
   &:before {
-    content: $icon-bedroom;
+    content: springpmsfont.$icon-bedroom;
   }
 }
 .icon-box_checked {
   &:before {
-    content: $icon-box_checked;
+    content: springpmsfont.$icon-box_checked;
   }
 }
 .icon-box_unchecked {
   &:before {
-    content: $icon-box_unchecked;
+    content: springpmsfont.$icon-box_unchecked;
   }
 }
 .icon-burger_menu {
   &:before {
-    content: $icon-burger_menu;
+    content: springpmsfont.$icon-burger_menu;
   }
 }
 .icon-calendar {
   &:before {
-    content: $icon-calendar;
+    content: springpmsfont.$icon-calendar;
   }
 }
 .icon-card {
   &:before {
-    content: $icon-card;
+    content: springpmsfont.$icon-card;
   }
 }
 .icon-cart {
   &:before {
-    content: $icon-cart;
+    content: springpmsfont.$icon-cart;
   }
 }
 .icon-check {
   &:before {
-    content: $icon-check;
+    content: springpmsfont.$icon-check;
   }
 }
 .icon-close {
   &:before {
-    content: $icon-close;
+    content: springpmsfont.$icon-close;
   }
 }
 .icon-cottage1 {
   &:before {
-    content: $icon-cottage1;
+    content: springpmsfont.$icon-cottage1;
   }
 }
 .icon-discount {
   &:before {
-    content: $icon-discount;
+    content: springpmsfont.$icon-discount;
   }
 }
 .icon-e-mail {
   &:before {
-    content: $icon-e-mail;
+    content: springpmsfont.$icon-e-mail;
   }
 }
 .icon-key {
   &:before {
-    content: $icon-key;
+    content: springpmsfont.$icon-key;
   }
 }
 .icon-map {
   &:before {
-    content: $icon-map;
+    content: springpmsfont.$icon-map;
   }
 }
 .icon-no_animals {
   &:before {
-    content: $icon-no_animals;
+    content: springpmsfont.$icon-no_animals;
   }
 }
 .icon-parking {
   &:before {
-    content: $icon-parking;
+    content: springpmsfont.$icon-parking;
   }
 }
 .icon-pdf {
   &:before {
-    content: $icon-pdf;
+    content: springpmsfont.$icon-pdf;
   }
 }
 .icon-phone {
   &:before {
-    content: $icon-phone;
+    content: springpmsfont.$icon-phone;
   }
 }
 .icon-radio_selected {
   &:before {
-    content: $icon-radio_selected;
+    content: springpmsfont.$icon-radio_selected;
   }
 }
 .icon-radio_unselected {
   &:before {
-    content: $icon-radio_unselected;
+    content: springpmsfont.$icon-radio_unselected;
   }
 }
 .icon-search {
   &:before {
-    content: $icon-search;
+    content: springpmsfont.$icon-search;
   }
 }
 .icon-shower {
   &:before {
-    content: $icon-shower;
+    content: springpmsfont.$icon-shower;
   }
 }
 .icon-spreadsheet {
   &:before {
-    content: $icon-spreadsheet;
+    content: springpmsfont.$icon-spreadsheet;
   }
 }
 .icon-wc {
   &:before {
-    content: $icon-wc;
+    content: springpmsfont.$icon-wc;
   }
 }
 .icon-wifi {
   &:before {
-    content: $icon-wifi;
+    content: springpmsfont.$icon-wifi;
   }
 }
 
