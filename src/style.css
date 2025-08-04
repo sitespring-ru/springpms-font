@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'spring-pms';
+  src:
+    url('fonts/spring-pms.ttf?4jfbtf') format('truetype'),
+    url('fonts/spring-pms.woff?4jfbtf') format('woff'),
+    url('fonts/spring-pms.svg?4jfbtf#spring-pms') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.springpms {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'spring-pms' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-no_return:before {
+  content: "\e96d";
+}
+.icon-redo:before {
+  content: "\e96b";
+}
+.icon-undo:before {
+  content: "\e96c";
+}
+.icon-book:before {
+  content: "\e963";
+}
+.icon-portfolio:before {
+  content: "\e964";
+}
+.icon-ruble:before {
+  content: "\e965";
+}
+.icon-site:before {
+  content: "\e966";
+}
+.icon-cloud-structure:before {
+  content: "\e967";
+}
+.icon-conversation:before {
+  content: "\e968";
+}
+.icon-design:before {
+  content: "\e969";
+}
+.icon-globe:before {
+  content: "\e96a";
+}
+.icon-massage:before {
+  content: "\e962";
+}
+.icon-kebab-menu:before {
+  content: "\e95e";
+}
+.icon-meatball-menu:before {
+  content: "\e961";
+}
+.icon-personal:before {
+  content: "\e95d";
+}
+.icon-inspector:before {
+  content: "\e95b";
+}
+.icon-arrow_left_dotted:before {
+  content: "\e89e";
+}
+.icon-arrow_right_dotted:before {
+  content: "\e89f";
+}
+.icon-boat:before {
+  content: "\e90a";
+}
+.icon-booking:before {
+  content: "\e955";
+}
+.icon-cart_2:before {
+  content: "\e956";
+}
+.icon-domestic:before {
+  content: "\e958";
+}
+.icon-feedback:before {
+  content: "\e959";
+}
+.icon-fixprice:before {
+  content: "\e95a";
+}
+.icon-horeca:before {
+  content: "\e950";
+}
+.icon-plot:before {
+  content: "\e95c";
+}
+.icon-QR-logo:before {
+  content: "\e935";
+}
+.icon-scalability:before {
+  content: "\e936";
+}
+.icon-skype:before {
+  content: "\e95f";
+}
+.icon-www:before {
+  content: "\e960";
+}
+.icon-attention:before {
+  content: "\e952";
+}
+.icon-info:before {
+  content: "\e953";
+}
+.icon-question:before {
+  content: "\e954";
+}
+.icon-receipt:before {
+  content: "\e951";
+}
+.icon-spring_screen:before {
+  content: "\e94f";
+}
+.icon-double_bed_split:before {
+  content: "\e94d";
+}
+.icon-couch:before {
+  content: "\e94e";
+}
+.icon-double_bed:before {
+  content: "\e938";
+}
+.icon-single_bed:before {
+  content: "\e939";
+}
+.icon-single_bed1:before {
+  content: "\e93a";
+}
+.icon-address:before {
+  content: "\e93b";
+}
+.icon-alert:before {
+  content: "\e93c";
+}
+.icon-area:before {
+  content: "\e93d";
+}
+.icon-bonus:before {
+  content: "\e93e";
+}
+.icon-breakfast:before {
+  content: "\e93f";
+}
+.icon-bunk_bed:before {
+  content: "\e940";
+}
+.icon-certificate:before {
+  content: "\e941";
+}
+.icon-cottages:before {
+  content: "\e942";
+}
+.icon-done:before {
+  content: "\e943";
+}
+.icon-favourite:before {
+  content: "\e944";
+}
+.icon-hotel:before {
+  content: "\e945";
+}
+.icon-my_iloranta:before {
+  content: "\e946";
+}
+.icon-notification:before {
+  content: "\e947";
+}
+.icon-passport:before {
+  content: "\e948";
+}
+.icon-personal_data:before {
+  content: "\e949";
+}
+.icon-profile:before {
+  content: "\e94a";
+}
+.icon-quit:before {
+  content: "\e94b";
+}
+.icon-star:before {
+  content: "\e94c";
+}
+.icon-flag:before {
+  content: "\e937";
+}
+.icon-extra:before {
+  content: "\e957";
+}
+.icon-group:before {
+  content: "\e916";
+}
+.icon-sauna:before {
+  content: "\e91f";
+}
+.icon-bill:before {
+  content: "\e928";
+}
+.icon-delete:before {
+  content: "\e929";
+}
+.icon-edit:before {
+  content: "\e92a";
+}
+.icon-farm:before {
+  content: "\e92b";
+}
+.icon-farm-products:before {
+  content: "\e92c";
+}
+.icon-history:before {
+  content: "\e92d";
+}
+.icon-meal:before {
+  content: "\e92e";
+}
+.icon-packet:before {
+  content: "\e92f";
+}
+.icon-QR:before {
+  content: "\e930";
+}
+.icon-ready-meals:before {
+  content: "\e931";
+}
+.icon-services:before {
+  content: "\e932";
+}
+.icon-settings:before {
+  content: "\e933";
+}
+.icon-transfer:before {
+  content: "\e934";
+}
+.icon-telegram:before {
+  content: "\e925";
+}
+.icon-logo:before {
+  content: "\e926";
+}
+.icon-whatsapp:before {
+  content: "\e927";
+}
+.icon-animals:before {
+  content: "\e900";
+}
+.icon-arrow_down:before {
+  content: "\e901";
+}
+.icon-arrow_down_short:before {
+  content: "\e902";
+}
+.icon-arrow_left:before {
+  content: "\e903";
+}
+.icon-arrow_left_short:before {
+  content: "\e904";
+}
+.icon-arrow_right:before {
+  content: "\e905";
+}
+.icon-arrow_right_short:before {
+  content: "\e906";
+}
+.icon-arrow_up:before {
+  content: "\e907";
+}
+.icon-arrow_up_short:before {
+  content: "\e908";
+}
+.icon-bedroom:before {
+  content: "\e909";
+}
+.icon-box_checked:before {
+  content: "\e90b";
+}
+.icon-box_unchecked:before {
+  content: "\e90c";
+}
+.icon-burger_menu:before {
+  content: "\e90d";
+}
+.icon-calendar:before {
+  content: "\e90e";
+}
+.icon-card:before {
+  content: "\e90f";
+}
+.icon-cart:before {
+  content: "\e910";
+}
+.icon-check:before {
+  content: "\e911";
+}
+.icon-close:before {
+  content: "\e912";
+}
+.icon-cottage1:before {
+  content: "\e913";
+}
+.icon-discount:before {
+  content: "\e914";
+}
+.icon-e-mail:before {
+  content: "\e915";
+}
+.icon-key:before {
+  content: "\e917";
+}
+.icon-map:before {
+  content: "\e918";
+}
+.icon-no_animals:before {
+  content: "\e919";
+}
+.icon-parking:before {
+  content: "\e91a";
+}
+.icon-pdf:before {
+  content: "\e91b";
+}
+.icon-phone:before {
+  content: "\e91c";
+}
+.icon-radio_selected:before {
+  content: "\e91d";
+}
+.icon-radio_unselected:before {
+  content: "\e91e";
+}
+.icon-search:before {
+  content: "\e920";
+}
+.icon-shower:before {
+  content: "\e921";
+}
+.icon-spreadsheet:before {
+  content: "\e922";
+}
+.icon-wc:before {
+  content: "\e923";
+}
+.icon-wifi:before {
+  content: "\e924";
+}
