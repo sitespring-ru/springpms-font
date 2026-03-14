@@ -28,12 +28,12 @@
 
 .icon-basik {
   &:before {
-    content: $icon-basik;
+    content: springpmsfont.$icon-basik;
   }
 }
 .icon-max_messenger {
   &:before {
-    content: $icon-max_messenger;
+    content: springpmsfont.$icon-max_messenger;
   }
 }
 .icon-no_return {
