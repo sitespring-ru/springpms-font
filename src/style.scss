@@ -26,6 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-basik {
+  &:before {
+    content: $icon-basik;
+  }
+}
+.icon-max_messenger {
+  &:before {
+    content: $icon-max_messenger;
+  }
+}
 .icon-no_return {
   &:before {
     content: springpmsfont.$icon-no_return;
