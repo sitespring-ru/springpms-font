@@ -1,11 +1,19 @@
 {
-  "name": "@sitespring/springpms-font",
-  "version": "2.4.1",
-  "description": "Icon font for springpms projects",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Evgeny Shevcov, Yury Sokolov",
-  "license": "ISC"
+    "name": "@sitespring/springpms-font",
+    "version": "2.5.3",
+    "description": "Icon font for springpms projects",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:demo": "sass src/style.scss src/style.css"
+    },
+    "author": "Evgeny Shevcov, Yury Sokolov",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.98.0"
+    },
+    "files": [
+        "src/style.scss",
+        "src/variables.scss"
+    ]
 }

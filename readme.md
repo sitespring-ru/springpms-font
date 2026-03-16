@@ -12,6 +12,14 @@ npm i sitespring-ru/springpms-font --save-dev
 @use "@sitespring/springpms-font/src/style" as springpmsfont;
 ```
 
+### Dev and updates
+```bash
+# Compile new version of style.scss to style.css
+npm run build:dev
+
+# Open demo.html tu ensure correct styling 
+```
+
 ### Common pitfalls
 ```bash
 // To correct resolve fonts path in webpack, resolve-url-loader required
