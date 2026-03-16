@@ -3,9 +3,9 @@
 @font-face {
   font-family: springpmsfont.$icon-font-family;
   src:
-    url('fonts/spring-pms.ttf?4jfbtf') format('truetype'),
-    url('fonts/spring-pms.woff?4jfbtf') format('woff'),
-    url('fonts/spring-pms.svg?4jfbtf#spring-pms') format('svg');
+    url('./fonts/spring-pms.ttf?4jfbtf') format('truetype'),
+    url('./fonts/spring-pms.woff?4jfbtf') format('woff'),
+    url('./fonts/spring-pms.svg?4jfbtf#spring-pms') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,576 +24,576 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-.icon-basik {
-  &:before {
-    content: springpmsfont.$icon-basik;
+  // !IMPORTANT icons must be in .springpms-icon namespace to prevent conflicts with other icons fonts
+  .icon-basik {
+    &:before {
+      content: springpmsfont.$icon-basik;
+    }
+  }
+  .icon-max_messenger {
+    &:before {
+      content: springpmsfont.$icon-max_messenger;
+    }
+  }
+  .icon-no_return {
+    &:before {
+      content: springpmsfont.$icon-no_return;
+    }
+  }
+  .icon-redo {
+    &:before {
+      content: springpmsfont.$icon-redo;
+    }
+  }
+  .icon-undo {
+    &:before {
+      content: springpmsfont.$icon-undo;
+    }
+  }
+  .icon-book {
+    &:before {
+      content: springpmsfont.$icon-book;
+    }
+  }
+  .icon-portfolio {
+    &:before {
+      content: springpmsfont.$icon-portfolio;
+    }
+  }
+  .icon-ruble {
+    &:before {
+      content: springpmsfont.$icon-ruble;
+    }
+  }
+  .icon-site {
+    &:before {
+      content: springpmsfont.$icon-site;
+    }
+  }
+  .icon-cloud-structure {
+    &:before {
+      content: springpmsfont.$icon-cloud-structure;
+    }
+  }
+  .icon-conversation {
+    &:before {
+      content: springpmsfont.$icon-conversation;
+    }
+  }
+  .icon-design {
+    &:before {
+      content: springpmsfont.$icon-design;
+    }
+  }
+  .icon-globe {
+    &:before {
+      content: springpmsfont.$icon-globe;
+    }
+  }
+  .icon-massage {
+    &:before {
+      content: springpmsfont.$icon-massage;
+    }
+  }
+  .icon-kebab-menu {
+    &:before {
+      content: springpmsfont.$icon-kebab-menu;
+    }
+  }
+  .icon-meatball-menu {
+    &:before {
+      content: springpmsfont.$icon-meatball-menu;
+    }
+  }
+  .icon-personal {
+    &:before {
+      content: springpmsfont.$icon-personal;
+    }
+  }
+  .icon-inspector {
+    &:before {
+      content: springpmsfont.$icon-inspector;
+    }
+  }
+  .icon-arrow_left_dotted {
+    &:before {
+      content: springpmsfont.$icon-arrow_left_dotted;
+    }
+  }
+  .icon-arrow_right_dotted {
+    &:before {
+      content: springpmsfont.$icon-arrow_right_dotted;
+    }
+  }
+  .icon-boat {
+    &:before {
+      content: springpmsfont.$icon-boat;
+    }
+  }
+  .icon-booking {
+    &:before {
+      content: springpmsfont.$icon-booking;
+    }
+  }
+  .icon-cart_2 {
+    &:before {
+      content: springpmsfont.$icon-cart_2;
+    }
+  }
+  .icon-domestic {
+    &:before {
+      content: springpmsfont.$icon-domestic;
+    }
+  }
+  .icon-feedback {
+    &:before {
+      content: springpmsfont.$icon-feedback;
+    }
+  }
+  .icon-fixprice {
+    &:before {
+      content: springpmsfont.$icon-fixprice;
+    }
+  }
+  .icon-horeca {
+    &:before {
+      content: springpmsfont.$icon-horeca;
+    }
+  }
+  .icon-plot {
+    &:before {
+      content: springpmsfont.$icon-plot;
+    }
+  }
+  .icon-QR-logo {
+    &:before {
+      content: springpmsfont.$icon-QR-logo;
+    }
+  }
+  .icon-scalability {
+    &:before {
+      content: springpmsfont.$icon-scalability;
+    }
+  }
+  .icon-skype {
+    &:before {
+      content: springpmsfont.$icon-skype;
+    }
+  }
+  .icon-www {
+    &:before {
+      content: springpmsfont.$icon-www;
+    }
+  }
+  .icon-attention {
+    &:before {
+      content: springpmsfont.$icon-attention;
+    }
+  }
+  .icon-info {
+    &:before {
+      content: springpmsfont.$icon-info;
+    }
+  }
+  .icon-question {
+    &:before {
+      content: springpmsfont.$icon-question;
+    }
+  }
+  .icon-receipt {
+    &:before {
+      content: springpmsfont.$icon-receipt;
+    }
+  }
+  .icon-spring_screen {
+    &:before {
+      content: springpmsfont.$icon-spring_screen;
+    }
+  }
+  .icon-double_bed_split {
+    &:before {
+      content: springpmsfont.$icon-double_bed_split;
+    }
+  }
+  .icon-couch {
+    &:before {
+      content: springpmsfont.$icon-couch;
+    }
+  }
+  .icon-double_bed {
+    &:before {
+      content: springpmsfont.$icon-double_bed;
+    }
+  }
+  .icon-single_bed {
+    &:before {
+      content: springpmsfont.$icon-single_bed;
+    }
+  }
+  .icon-single_bed1 {
+    &:before {
+      content: springpmsfont.$icon-single_bed1;
+    }
+  }
+  .icon-address {
+    &:before {
+      content: springpmsfont.$icon-address;
+    }
+  }
+  .icon-alert {
+    &:before {
+      content: springpmsfont.$icon-alert;
+    }
+  }
+  .icon-area {
+    &:before {
+      content: springpmsfont.$icon-area;
+    }
+  }
+  .icon-bonus {
+    &:before {
+      content: springpmsfont.$icon-bonus;
+    }
+  }
+  .icon-breakfast {
+    &:before {
+      content: springpmsfont.$icon-breakfast;
+    }
+  }
+  .icon-bunk_bed {
+    &:before {
+      content: springpmsfont.$icon-bunk_bed;
+    }
+  }
+  .icon-certificate {
+    &:before {
+      content: springpmsfont.$icon-certificate;
+    }
+  }
+  .icon-cottages {
+    &:before {
+      content: springpmsfont.$icon-cottages;
+    }
+  }
+  .icon-done {
+    &:before {
+      content: springpmsfont.$icon-done;
+    }
+  }
+  .icon-favourite {
+    &:before {
+      content: springpmsfont.$icon-favourite;
+    }
+  }
+  .icon-hotel {
+    &:before {
+      content: springpmsfont.$icon-hotel;
+    }
+  }
+  .icon-my_iloranta {
+    &:before {
+      content: springpmsfont.$icon-my_iloranta;
+    }
+  }
+  .icon-notification {
+    &:before {
+      content: springpmsfont.$icon-notification;
+    }
+  }
+  .icon-passport {
+    &:before {
+      content: springpmsfont.$icon-passport;
+    }
+  }
+  .icon-personal_data {
+    &:before {
+      content: springpmsfont.$icon-personal_data;
+    }
+  }
+  .icon-profile {
+    &:before {
+      content: springpmsfont.$icon-profile;
+    }
+  }
+  .icon-quit {
+    &:before {
+      content: springpmsfont.$icon-quit;
+    }
+  }
+  .icon-star {
+    &:before {
+      content: springpmsfont.$icon-star;
+    }
+  }
+  .icon-flag {
+    &:before {
+      content: springpmsfont.$icon-flag;
+    }
+  }
+  .icon-extra {
+    &:before {
+      content: springpmsfont.$icon-extra;
+    }
+  }
+  .icon-group {
+    &:before {
+      content: springpmsfont.$icon-group;
+    }
+  }
+  .icon-sauna {
+    &:before {
+      content: springpmsfont.$icon-sauna;
+    }
+  }
+  .icon-bill {
+    &:before {
+      content: springpmsfont.$icon-bill;
+    }
+  }
+  .icon-delete {
+    &:before {
+      content: springpmsfont.$icon-delete;
+    }
+  }
+  .icon-edit {
+    &:before {
+      content: springpmsfont.$icon-edit;
+    }
+  }
+  .icon-farm {
+    &:before {
+      content: springpmsfont.$icon-farm;
+    }
+  }
+  .icon-farm-products {
+    &:before {
+      content: springpmsfont.$icon-farm-products;
+    }
+  }
+  .icon-history {
+    &:before {
+      content: springpmsfont.$icon-history;
+    }
+  }
+  .icon-meal {
+    &:before {
+      content: springpmsfont.$icon-meal;
+    }
+  }
+  .icon-packet {
+    &:before {
+      content: springpmsfont.$icon-packet;
+    }
+  }
+  .icon-QR {
+    &:before {
+      content: springpmsfont.$icon-QR;
+    }
+  }
+  .icon-ready-meals {
+    &:before {
+      content: springpmsfont.$icon-ready-meals;
+    }
+  }
+  .icon-services {
+    &:before {
+      content: springpmsfont.$icon-services;
+    }
+  }
+  .icon-settings {
+    &:before {
+      content: springpmsfont.$icon-settings;
+    }
+  }
+  .icon-transfer {
+    &:before {
+      content: springpmsfont.$icon-transfer;
+    }
+  }
+  .icon-telegram {
+    &:before {
+      content: springpmsfont.$icon-telegram;
+    }
+  }
+  .icon-logo {
+    &:before {
+      content: springpmsfont.$icon-logo;
+    }
+  }
+  .icon-whatsapp {
+    &:before {
+      content: springpmsfont.$icon-whatsapp;
+    }
+  }
+  .icon-animals {
+    &:before {
+      content: springpmsfont.$icon-animals;
+    }
+  }
+  .icon-arrow_down {
+    &:before {
+      content: springpmsfont.$icon-arrow_down;
+    }
+  }
+  .icon-arrow_down_short {
+    &:before {
+      content: springpmsfont.$icon-arrow_down_short;
+    }
+  }
+  .icon-arrow_left {
+    &:before {
+      content: springpmsfont.$icon-arrow_left;
+    }
+  }
+  .icon-arrow_left_short {
+    &:before {
+      content: springpmsfont.$icon-arrow_left_short;
+    }
+  }
+  .icon-arrow_right {
+    &:before {
+      content: springpmsfont.$icon-arrow_right;
+    }
+  }
+  .icon-arrow_right_short {
+    &:before {
+      content: springpmsfont.$icon-arrow_right_short;
+    }
+  }
+  .icon-arrow_up {
+    &:before {
+      content: springpmsfont.$icon-arrow_up;
+    }
+  }
+  .icon-arrow_up_short {
+    &:before {
+      content: springpmsfont.$icon-arrow_up_short;
+    }
+  }
+  .icon-bedroom {
+    &:before {
+      content: springpmsfont.$icon-bedroom;
+    }
+  }
+  .icon-box_checked {
+    &:before {
+      content: springpmsfont.$icon-box_checked;
+    }
+  }
+  .icon-box_unchecked {
+    &:before {
+      content: springpmsfont.$icon-box_unchecked;
+    }
+  }
+  .icon-burger_menu {
+    &:before {
+      content: springpmsfont.$icon-burger_menu;
+    }
+  }
+  .icon-calendar {
+    &:before {
+      content: springpmsfont.$icon-calendar;
+    }
+  }
+  .icon-card {
+    &:before {
+      content: springpmsfont.$icon-card;
+    }
+  }
+  .icon-cart {
+    &:before {
+      content: springpmsfont.$icon-cart;
+    }
+  }
+  .icon-check {
+    &:before {
+      content: springpmsfont.$icon-check;
+    }
+  }
+  .icon-close {
+    &:before {
+      content: springpmsfont.$icon-close;
+    }
+  }
+  .icon-cottage1 {
+    &:before {
+      content: springpmsfont.$icon-cottage1;
+    }
+  }
+  .icon-discount {
+    &:before {
+      content: springpmsfont.$icon-discount;
+    }
+  }
+  .icon-e-mail {
+    &:before {
+      content: springpmsfont.$icon-e-mail;
+    }
+  }
+  .icon-key {
+    &:before {
+      content: springpmsfont.$icon-key;
+    }
+  }
+  .icon-map {
+    &:before {
+      content: springpmsfont.$icon-map;
+    }
+  }
+  .icon-no_animals {
+    &:before {
+      content: springpmsfont.$icon-no_animals;
+    }
+  }
+  .icon-parking {
+    &:before {
+      content: springpmsfont.$icon-parking;
+    }
+  }
+  .icon-pdf {
+    &:before {
+      content: springpmsfont.$icon-pdf;
+    }
+  }
+  .icon-phone {
+    &:before {
+      content: springpmsfont.$icon-phone;
+    }
+  }
+  .icon-radio_selected {
+    &:before {
+      content: springpmsfont.$icon-radio_selected;
+    }
+  }
+  .icon-radio_unselected {
+    &:before {
+      content: springpmsfont.$icon-radio_unselected;
+    }
+  }
+  .icon-search {
+    &:before {
+      content: springpmsfont.$icon-search;
+    }
+  }
+  .icon-shower {
+    &:before {
+      content: springpmsfont.$icon-shower;
+    }
+  }
+  .icon-spreadsheet {
+    &:before {
+      content: springpmsfont.$icon-spreadsheet;
+    }
+  }
+  .icon-wc {
+    &:before {
+      content: springpmsfont.$icon-wc;
+    }
+  }
+  .icon-wifi {
+    &:before {
+      content: springpmsfont.$icon-wifi;
+    }
   }
 }
-.icon-max_messenger {
-  &:before {
-    content: springpmsfont.$icon-max_messenger;
-  }
-}
-.icon-no_return {
-  &:before {
-    content: springpmsfont.$icon-no_return;
-  }
-}
-.icon-redo {
-  &:before {
-    content: springpmsfont.$icon-redo;
-  }
-}
-.icon-undo {
-  &:before {
-    content: springpmsfont.$icon-undo;
-  }
-}
-.icon-book {
-  &:before {
-    content: springpmsfont.$icon-book;
-  }
-}
-.icon-portfolio {
-  &:before {
-    content: springpmsfont.$icon-portfolio;
-  }
-}
-.icon-ruble {
-  &:before {
-    content: springpmsfont.$icon-ruble;
-  }
-}
-.icon-site {
-  &:before {
-    content: springpmsfont.$icon-site;
-  }
-}
-.icon-cloud-structure {
-  &:before {
-    content: springpmsfont.$icon-cloud-structure;
-  }
-}
-.icon-conversation {
-  &:before {
-    content: springpmsfont.$icon-conversation;
-  }
-}
-.icon-design {
-  &:before {
-    content: springpmsfont.$icon-design;
-  }
-}
-.icon-globe {
-  &:before {
-    content: springpmsfont.$icon-globe;
-  }
-}
-.icon-massage {
-  &:before {
-    content: springpmsfont.$icon-massage;
-  }
-}
-.icon-kebab-menu {
-  &:before {
-    content: springpmsfont.$icon-kebab-menu;
-  }
-}
-.icon-meatball-menu {
-  &:before {
-    content: springpmsfont.$icon-meatball-menu;
-  }
-}
-.icon-personal {
-  &:before {
-    content: springpmsfont.$icon-personal;
-  }
-}
-.icon-inspector {
-  &:before {
-    content: springpmsfont.$icon-inspector;
-  }
-}
-.icon-arrow_left_dotted {
-  &:before {
-    content: springpmsfont.$icon-arrow_left_dotted;
-  }
-}
-.icon-arrow_right_dotted {
-  &:before {
-    content: springpmsfont.$icon-arrow_right_dotted;
-  }
-}
-.icon-boat {
-  &:before {
-    content: springpmsfont.$icon-boat;
-  }
-}
-.icon-booking {
-  &:before {
-    content: springpmsfont.$icon-booking;
-  }
-}
-.icon-cart_2 {
-  &:before {
-    content: springpmsfont.$icon-cart_2;
-  }
-}
-.icon-domestic {
-  &:before {
-    content: springpmsfont.$icon-domestic;
-  }
-}
-.icon-feedback {
-  &:before {
-    content: springpmsfont.$icon-feedback;
-  }
-}
-.icon-fixprice {
-  &:before {
-    content: springpmsfont.$icon-fixprice;
-  }
-}
-.icon-horeca {
-  &:before {
-    content: springpmsfont.$icon-horeca;
-  }
-}
-.icon-plot {
-  &:before {
-    content: springpmsfont.$icon-plot;
-  }
-}
-.icon-QR-logo {
-  &:before {
-    content: springpmsfont.$icon-QR-logo;
-  }
-}
-.icon-scalability {
-  &:before {
-    content: springpmsfont.$icon-scalability;
-  }
-}
-.icon-skype {
-  &:before {
-    content: springpmsfont.$icon-skype;
-  }
-}
-.icon-www {
-  &:before {
-    content: springpmsfont.$icon-www;
-  }
-}
-.icon-attention {
-  &:before {
-    content: springpmsfont.$icon-attention;
-  }
-}
-.icon-info {
-  &:before {
-    content: springpmsfont.$icon-info;
-  }
-}
-.icon-question {
-  &:before {
-    content: springpmsfont.$icon-question;
-  }
-}
-.icon-receipt {
-  &:before {
-    content: springpmsfont.$icon-receipt;
-  }
-}
-.icon-spring_screen {
-  &:before {
-    content: springpmsfont.$icon-spring_screen;
-  }
-}
-.icon-double_bed_split {
-  &:before {
-    content: springpmsfont.$icon-double_bed_split;
-  }
-}
-.icon-couch {
-  &:before {
-    content: springpmsfont.$icon-couch;
-  }
-}
-.icon-double_bed {
-  &:before {
-    content: springpmsfont.$icon-double_bed;
-  }
-}
-.icon-single_bed {
-  &:before {
-    content: springpmsfont.$icon-single_bed;
-  }
-}
-.icon-single_bed1 {
-  &:before {
-    content: springpmsfont.$icon-single_bed1;
-  }
-}
-.icon-address {
-  &:before {
-    content: springpmsfont.$icon-address;
-  }
-}
-.icon-alert {
-  &:before {
-    content: springpmsfont.$icon-alert;
-  }
-}
-.icon-area {
-  &:before {
-    content: springpmsfont.$icon-area;
-  }
-}
-.icon-bonus {
-  &:before {
-    content: springpmsfont.$icon-bonus;
-  }
-}
-.icon-breakfast {
-  &:before {
-    content: springpmsfont.$icon-breakfast;
-  }
-}
-.icon-bunk_bed {
-  &:before {
-    content: springpmsfont.$icon-bunk_bed;
-  }
-}
-.icon-certificate {
-  &:before {
-    content: springpmsfont.$icon-certificate;
-  }
-}
-.icon-cottages {
-  &:before {
-    content: springpmsfont.$icon-cottages;
-  }
-}
-.icon-done {
-  &:before {
-    content: springpmsfont.$icon-done;
-  }
-}
-.icon-favourite {
-  &:before {
-    content: springpmsfont.$icon-favourite;
-  }
-}
-.icon-hotel {
-  &:before {
-    content: springpmsfont.$icon-hotel;
-  }
-}
-.icon-my_iloranta {
-  &:before {
-    content: springpmsfont.$icon-my_iloranta;
-  }
-}
-.icon-notification {
-  &:before {
-    content: springpmsfont.$icon-notification;
-  }
-}
-.icon-passport {
-  &:before {
-    content: springpmsfont.$icon-passport;
-  }
-}
-.icon-personal_data {
-  &:before {
-    content: springpmsfont.$icon-personal_data;
-  }
-}
-.icon-profile {
-  &:before {
-    content: springpmsfont.$icon-profile;
-  }
-}
-.icon-quit {
-  &:before {
-    content: springpmsfont.$icon-quit;
-  }
-}
-.icon-star {
-  &:before {
-    content: springpmsfont.$icon-star;
-  }
-}
-.icon-flag {
-  &:before {
-    content: springpmsfont.$icon-flag;
-  }
-}
-.icon-extra {
-  &:before {
-    content: springpmsfont.$icon-extra;
-  }
-}
-.icon-group {
-  &:before {
-    content: springpmsfont.$icon-group;
-  }
-}
-.icon-sauna {
-  &:before {
-    content: springpmsfont.$icon-sauna;
-  }
-}
-.icon-bill {
-  &:before {
-    content: springpmsfont.$icon-bill;
-  }
-}
-.icon-delete {
-  &:before {
-    content: springpmsfont.$icon-delete;
-  }
-}
-.icon-edit {
-  &:before {
-    content: springpmsfont.$icon-edit;
-  }
-}
-.icon-farm {
-  &:before {
-    content: springpmsfont.$icon-farm;
-  }
-}
-.icon-farm-products {
-  &:before {
-    content: springpmsfont.$icon-farm-products;
-  }
-}
-.icon-history {
-  &:before {
-    content: springpmsfont.$icon-history;
-  }
-}
-.icon-meal {
-  &:before {
-    content: springpmsfont.$icon-meal;
-  }
-}
-.icon-packet {
-  &:before {
-    content: springpmsfont.$icon-packet;
-  }
-}
-.icon-QR {
-  &:before {
-    content: springpmsfont.$icon-QR;
-  }
-}
-.icon-ready-meals {
-  &:before {
-    content: springpmsfont.$icon-ready-meals;
-  }
-}
-.icon-services {
-  &:before {
-    content: springpmsfont.$icon-services;
-  }
-}
-.icon-settings {
-  &:before {
-    content: springpmsfont.$icon-settings;
-  }
-}
-.icon-transfer {
-  &:before {
-    content: springpmsfont.$icon-transfer;
-  }
-}
-.icon-telegram {
-  &:before {
-    content: springpmsfont.$icon-telegram;
-  }
-}
-.icon-logo {
-  &:before {
-    content: springpmsfont.$icon-logo;
-  }
-}
-.icon-whatsapp {
-  &:before {
-    content: springpmsfont.$icon-whatsapp;
-  }
-}
-.icon-animals {
-  &:before {
-    content: springpmsfont.$icon-animals;
-  }
-}
-.icon-arrow_down {
-  &:before {
-    content: springpmsfont.$icon-arrow_down;
-  }
-}
-.icon-arrow_down_short {
-  &:before {
-    content: springpmsfont.$icon-arrow_down_short;
-  }
-}
-.icon-arrow_left {
-  &:before {
-    content: springpmsfont.$icon-arrow_left;
-  }
-}
-.icon-arrow_left_short {
-  &:before {
-    content: springpmsfont.$icon-arrow_left_short;
-  }
-}
-.icon-arrow_right {
-  &:before {
-    content: springpmsfont.$icon-arrow_right;
-  }
-}
-.icon-arrow_right_short {
-  &:before {
-    content: springpmsfont.$icon-arrow_right_short;
-  }
-}
-.icon-arrow_up {
-  &:before {
-    content: springpmsfont.$icon-arrow_up;
-  }
-}
-.icon-arrow_up_short {
-  &:before {
-    content: springpmsfont.$icon-arrow_up_short;
-  }
-}
-.icon-bedroom {
-  &:before {
-    content: springpmsfont.$icon-bedroom;
-  }
-}
-.icon-box_checked {
-  &:before {
-    content: springpmsfont.$icon-box_checked;
-  }
-}
-.icon-box_unchecked {
-  &:before {
-    content: springpmsfont.$icon-box_unchecked;
-  }
-}
-.icon-burger_menu {
-  &:before {
-    content: springpmsfont.$icon-burger_menu;
-  }
-}
-.icon-calendar {
-  &:before {
-    content: springpmsfont.$icon-calendar;
-  }
-}
-.icon-card {
-  &:before {
-    content: springpmsfont.$icon-card;
-  }
-}
-.icon-cart {
-  &:before {
-    content: springpmsfont.$icon-cart;
-  }
-}
-.icon-check {
-  &:before {
-    content: springpmsfont.$icon-check;
-  }
-}
-.icon-close {
-  &:before {
-    content: springpmsfont.$icon-close;
-  }
-}
-.icon-cottage1 {
-  &:before {
-    content: springpmsfont.$icon-cottage1;
-  }
-}
-.icon-discount {
-  &:before {
-    content: springpmsfont.$icon-discount;
-  }
-}
-.icon-e-mail {
-  &:before {
-    content: springpmsfont.$icon-e-mail;
-  }
-}
-.icon-key {
-  &:before {
-    content: springpmsfont.$icon-key;
-  }
-}
-.icon-map {
-  &:before {
-    content: springpmsfont.$icon-map;
-  }
-}
-.icon-no_animals {
-  &:before {
-    content: springpmsfont.$icon-no_animals;
-  }
-}
-.icon-parking {
-  &:before {
-    content: springpmsfont.$icon-parking;
-  }
-}
-.icon-pdf {
-  &:before {
-    content: springpmsfont.$icon-pdf;
-  }
-}
-.icon-phone {
-  &:before {
-    content: springpmsfont.$icon-phone;
-  }
-}
-.icon-radio_selected {
-  &:before {
-    content: springpmsfont.$icon-radio_selected;
-  }
-}
-.icon-radio_unselected {
-  &:before {
-    content: springpmsfont.$icon-radio_unselected;
-  }
-}
-.icon-search {
-  &:before {
-    content: springpmsfont.$icon-search;
-  }
-}
-.icon-shower {
-  &:before {
-    content: springpmsfont.$icon-shower;
-  }
-}
-.icon-spreadsheet {
-  &:before {
-    content: springpmsfont.$icon-spreadsheet;
-  }
-}
-.icon-wc {
-  &:before {
-    content: springpmsfont.$icon-wc;
-  }
-}
-.icon-wifi {
-  &:before {
-    content: springpmsfont.$icon-wifi;
-  }
-}
-
