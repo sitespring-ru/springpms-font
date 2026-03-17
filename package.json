@@ -13,6 +13,7 @@
         "sass": "^1.98.0"
     },
     "files": [
+        "src/style.css",
         "src/style.scss",
         "src/variables.scss",
         "src/fonts"
