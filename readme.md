@@ -17,7 +17,7 @@ npm i sitespring-ru/springpms-font --save-dev
 # Compile new version of style.scss to style.css
 npm run build:dev
 
-# Open demo.html tu ensure correct styling 
+# Open demo.html to ensure correct styling 
 ```
 
 ### Common pitfalls

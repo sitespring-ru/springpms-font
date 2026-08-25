@@ -19,6 +19,7 @@ import os from 'node:os';
 import path from 'node:path';
 
 const FONT_BASENAME = 'spring-pms';
+const BASE_CLASS = 'springpms-icon';   // namespace репозитория, см. style.scss
 const SHIPPED_FORMATS = ['ttf', 'woff', 'svg'];
 
 const args = process.argv.slice(2);
@@ -101,6 +102,19 @@ if (exportBase && exportBase !== FONT_BASENAME) {
   blockers.push(
     `Файлы шрифта в экспорте называются "${exportBase}.*", а репозиторий и @font-face завязаны на "${FONT_BASENAME}.*" ` +
       `(включая фрагмент #${FONT_BASENAME} в svg-ссылке). Переименуйте шрифт в проекте IcoMoon в "${FONT_BASENAME}" и переэкспортируйте.`
+  );
+}
+
+// Базовый класс в демо экспорта. IcoMoon берёт его из Preferences -> CSS Selector,
+// и он регулярно расходится с namespace репозитория — тогда демо рисует пустоту.
+const demoHtmlPath = path.join(exportDir, 'demo.html');
+const exportBaseClass = fs.existsSync(demoHtmlPath)
+  ? (fs.readFileSync(demoHtmlPath, 'utf8').match(/class="([A-Za-z0-9_-]+) icon-/) || [])[1]
+  : undefined;
+if (exportBaseClass && exportBaseClass !== BASE_CLASS) {
+  notes.push(
+    `Базовый класс в демо экспорта — ".${exportBaseClass}", а стили репозитория живут в ".${BASE_CLASS}". ` +
+      `demo.html будет переписан на ".${BASE_CLASS}"; в проекте IcoMoon стоит поправить Preferences -> CSS Selector, иначе расхождение вернётся.`
   );
 }
 
@@ -203,10 +217,10 @@ const varsOut =
 fs.writeFileSync(path.join(src, 'variables.scss'), varsOut);
 
 // style.scss — @font-face с новым токеном + сохранённый preamble + правила иконок
-const preambleStart = currentStyleText.indexOf('.springpms-icon {');
+const preambleStart = currentStyleText.indexOf(`.${BASE_CLASS} {`);
 const firstRule = currentStyleText.indexOf('\n  &.icon-');
 if (preambleStart === -1 || firstRule === -1 || firstRule < preambleStart) {
-  fail('Не удалось разобрать src/style.scss: не найден блок .springpms-icon или первое правило &.icon-*.');
+  fail(`Не удалось разобрать src/style.scss: не найден блок .${BASE_CLASS} или первое правило &.icon-*.`);
 }
 const head = currentStyleText.slice(0, preambleStart).replace(/\?[A-Za-z0-9]+/g, `?${exportToken}`);
 const preamble = currentStyleText.slice(preambleStart, firstRule);
@@ -216,9 +230,17 @@ const rules = newIcons
 fs.writeFileSync(path.join(src, 'style.scss'), head + preamble + rules + '\n}\n');
 
 // демо
-const demoHtml = path.join(exportDir, 'demo.html');
-if (fs.existsSync(demoHtml)) {
-  fs.writeFileSync(path.join(src, 'demo.html'), fs.readFileSync(demoHtml, 'utf8').replace(/(?:\.\/)?demo-files\//g, './demo/'));
+if (fs.existsSync(demoHtmlPath)) {
+  const html = fs
+    .readFileSync(demoHtmlPath, 'utf8')
+    .replace(/(?:\.\/)?demo-files\//g, './demo/')
+    .replace(/class="[A-Za-z0-9_-]+ (icon-)/g, `class="${BASE_CLASS} $1`);
+  // <title> в репозитории правили руками — экспорт возвращает дефолтный «IcoMoon Demo»
+  const keptTitle = (fs.readFileSync(path.join(src, 'demo.html'), 'utf8').match(/<title>([^<]*)<\/title>/) || [])[1];
+  fs.writeFileSync(
+    path.join(src, 'demo.html'),
+    keptTitle ? html.replace(/<title>[^<]*<\/title>/, `<title>${keptTitle}</title>`) : html
+  );
 }
 const demoSrc = path.join(exportDir, 'demo-files');
 if (fs.existsSync(demoSrc)) {

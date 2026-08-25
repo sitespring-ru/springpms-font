@@ -3,9 +3,9 @@
 @font-face {
   font-family: springpmsfont.$icon-font-family;
   src:
-    url('./fonts/spring-pms.ttf?4jfbtf') format('truetype'),
-    url('./fonts/spring-pms.woff?4jfbtf') format('woff'),
-    url('./fonts/spring-pms.svg?4jfbtf#spring-pms') format('svg');
+    url('./fonts/spring-pms.ttf?ps4fcx') format('truetype'),
+    url('./fonts/spring-pms.woff?ps4fcx') format('woff'),
+    url('./fonts/spring-pms.svg?ps4fcx#spring-pms') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,11 @@
   -moz-osx-font-smoothing: grayscale;
 
   // !IMPORTANT icons must be in .springpms-icon namespace to prevent conflicts with other icons fonts
+  &.icon-chat {
+    &:before {
+      content: springpmsfont.$icon-chat;
+    }
+  }
   &.icon-basik {
     &:before {
       content: springpmsfont.$icon-basik;
