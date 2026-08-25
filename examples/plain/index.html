@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>springpms-font — подключение через файл стилей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Всё, что нужно: собранный style.css пакета. Sass не требуется.
+         В проекте путь будет node_modules/@sitespring/springpms-font/src/style.css -->
+    <link rel="stylesheet" href="../../src/style.css">
+
+    <link rel="stylesheet" href="../gallery.css">
+    <link rel="stylesheet" href="usage.css">
+</head>
+<body>
+<header class="head">
+    <h1>Подключение через файл стилей</h1>
+    <p class="sub">Без Sass и сборки — один <code>&lt;link&gt;</code> на <code>src/style.css</code>.
+        Все иконки — в <a href="../index.html">галерее</a>.</p>
+</header>
+
+<section>
+    <h2>1. Подключить</h2>
+    <pre><code>&lt;link rel="stylesheet"
+      href="node_modules/@sitespring/springpms-font/src/style.css"&gt;</code></pre>
+    <p class="note">Шрифт лежит рядом с css (<code>./fonts/…</code>), поэтому копировать файл
+        стилей отдельно от папки <code>fonts/</code> нельзя — относительные пути сломаются.</p>
+</section>
+
+<section>
+    <h2>2. Поставить иконку</h2>
+    <p class="note">Два класса: namespace <code>springpms-icon</code> и имя
+        <code>icon-&lt;имя&gt;</code>. Без namespace иконка не отрисуется — так сделано,
+        чтобы не конфликтовать с другими иконочными шрифтами.</p>
+    <div class="row">
+        <span class="springpms-icon icon-chat"></span>
+        <span class="springpms-icon icon-booking"></span>
+        <span class="springpms-icon icon-wifi"></span>
+    </div>
+    <pre><code>&lt;span class="springpms-icon icon-chat"&gt;&lt;/span&gt;</code></pre>
+</section>
+
+<section>
+    <h2>3. Размер и цвет</h2>
+    <p class="note">Иконка — это текст: наследует <code>font-size</code> и <code>color</code>
+        родителя, отдельных модификаторов в пакете нет.</p>
+    <div class="row">
+        <span class="springpms-icon icon-favourite demo-sm"></span>
+        <span class="springpms-icon icon-favourite demo-md"></span>
+        <span class="springpms-icon icon-favourite demo-lg"></span>
+        <span class="springpms-icon icon-favourite demo-accent"></span>
+    </div>
+    <pre><code>.demo-lg     { font-size: 40px; }
+.demo-accent { color: #e11d48; }</code></pre>
+</section>
+
+<section>
+    <h2>4. Иконка рядом с текстом</h2>
+    <div class="row">
+        <button class="demo-btn" type="button">
+            <span class="springpms-icon icon-done"></span>
+            Подтвердить
+        </button>
+        <button class="demo-btn" type="button">
+            <span class="springpms-icon icon-search"></span>
+            Найти
+        </button>
+    </div>
+    <pre><code>&lt;button&gt;
+    &lt;span class="springpms-icon icon-done"&gt;&lt;/span&gt;
+    Подтвердить
+&lt;/button&gt;</code></pre>
+</section>
+
+<section>
+    <h2>5. Иконка в своём псевдоэлементе</h2>
+    <p class="note">Когда лишний <code>&lt;span&gt;</code> в разметке не нужен. Кодпоинт берётся
+        из галереи; семейство указывается вручную, потому что вне класса
+        <code>springpms-icon</code> оно не задано.</p>
+    <div class="row">
+        <span class="demo-pseudo">Написать в чат</span>
+    </div>
+    <pre><code>.demo-pseudo::before {
+    font-family: 'spring-pms';
+    content: "\e970";   /* icon-chat */
+    margin-right: 8px;
+}</code></pre>
+    <p class="note">В Sass-проекте так делать не надо — там есть переменные:
+        <code>content: springpmsfont.$icon-chat;</code>, см.
+        <a href="../../readme.md">readme</a>.</p>
+</section>
+</body>
+</html>

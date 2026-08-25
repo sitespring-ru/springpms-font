@@ -1,0 +1,106 @@
+/* Стили страницы примера. Палитра и типографика приезжают из ../gallery.css. */
+
+section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+section:last-child {
+    border-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.note {
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 24px;
+    border-radius: 10px;
+    background: var(--tile);
+}
+
+pre {
+    margin: 0;
+    padding: 16px;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--tile);
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px;
+}
+
+.head .sub a,
+.note a {
+    color: var(--accent);
+}
+
+/* --- то, что демонстрируют примеры --- */
+
+.row .springpms-icon {
+    font-size: 28px;
+}
+
+.demo-sm {
+    font-size: 16px !important;
+}
+
+.demo-md {
+    font-size: 28px !important;
+}
+
+.demo-lg {
+    font-size: 40px !important;
+}
+
+.demo-accent {
+    font-size: 40px !important;
+    color: #e11d48;
+}
+
+.demo-btn {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.demo-btn:hover {
+    border-color: var(--accent);
+}
+
+/* Внутри кнопки иконка должна быть соразмерна тексту, а не 28px из .row */
+.demo-btn .springpms-icon {
+    font-size: 1.2em;
+}
+
+.demo-pseudo::before {
+    font-family: 'spring-pms';
+    content: "\e970"; /* icon-chat */
+    margin-right: 8px;
+    vertical-align: -.1em;
+    font-size: 1.3em;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>springpms-font — {{COUNT}} иконок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Собранный CSS пакета: галерея открывается файлом, без сборки -->
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<header class="head">
+    <h1>springpms-font</h1>
+    <p class="sub">{{COUNT}} иконок в семействе <code>{{FAMILY}}</code> ·
+        <a href="plain/index.html">подключение через файл стилей</a> ·
+        <a href="vue3/README.md">компонент для Vue 3</a></p>
+    <div class="controls">
+        <input id="filter" type="search" placeholder="Фильтр по имени…" autocomplete="off">
+        <label>Размер
+            <input id="size" type="range" min="16" max="72" value="32">
+        </label>
+    </div>
+</header>
+
+<main id="grid" class="grid">
+{{ICONS}}
+</main>
+
+<p id="empty" class="empty" hidden>Ничего не найдено</p>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+    const grid = document.getElementById('grid');
+    const tiles = [...grid.children];
+    const empty = document.getElementById('empty');
+    const toast = document.getElementById('toast');
+
+    document.getElementById('filter').addEventListener('input', (e) => {
+        const q = e.target.value.trim().toLowerCase();
+        let shown = 0;
+        for (const tile of tiles) {
+            // Сверяем с полным именем класса, чтобы находилось и «chat», и «icon-chat».
+            // Регистр снимаем с обеих сторон — среди имён есть icon-QR-logo.
+            const hit = !q || ('icon-' + tile.dataset.name).toLowerCase().includes(q);
+            tile.hidden = !hit;
+            if (hit) shown++;
+        }
+        empty.hidden = shown > 0;
+    });
+
+    document.getElementById('size').addEventListener('input', (e) => {
+        grid.style.setProperty('--glyph', e.target.value + 'px');
+    });
+
+    let toastTimer;
+    grid.addEventListener('click', async (e) => {
+        const tile = e.target.closest('.tile');
+        if (!tile) return;
+        const cls = 'icon-' + tile.dataset.name;
+        try {
+            await navigator.clipboard.writeText(cls);
+            toast.textContent = 'Скопировано: ' + cls;
+        } catch {
+            // file:// без разрешения на буфер обмена — показываем, что копировать руками
+            toast.textContent = cls;
+        }
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('show'), 1600);
+    });
+</script>
+</body>
+</html>
